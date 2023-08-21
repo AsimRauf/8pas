@@ -66,12 +66,7 @@ ugen=[]
 cokbrut=[]
 ses=requests.Session()
 princp=[]
-try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox)
-except Exception as e:
-	print('[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mTIDAK ADA KONEKSI INTERNET !')
-prox=open('.prox.txt','r').read().splitlines()
+
 for xd in range(10000):
     a='Mozilla/5.0 (Symbian/3; Series60/'
     b=random.randrange(1, 9)
